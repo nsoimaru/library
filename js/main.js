@@ -61,7 +61,7 @@ myLibrary.forEach(book => {
     row.insertCell(2).append(book.author);
     row.insertCell(3).append(book.pages);
     row.insertCell(4).append(book.read);
-    row.insertCell(5).append('check box');
-    row.insertCell(6).append('edit btn');
-    row.insertCell(7).append('delete btn');
+    row.insertCell(5).innerHTML += '<input type="checkbox" id="readState" name="readState" value="1">';
+    row.insertCell(6).innerHTML += '<button class="btn btn-success">Edit Book</button>';
+    row.insertCell(7).innerHTML += '<button class="btn btn-success">Delete Book</button>';
 });
